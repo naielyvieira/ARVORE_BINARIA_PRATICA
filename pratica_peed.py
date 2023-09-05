@@ -73,18 +73,18 @@ class ArvoreBinaria:
 # Exemplo de uso:
 if __name__ == "__main__":
     arvore = ArvoreBinaria()
-    numeros = [10, 5, 15, 3, 7, 12, 20]
+    numeros = [8, 9, 10, 11 , 12 ,13, 14, 20]
 
     for numero in numeros:
         arvore.insere(numero)
 
-    print("Árvore Binária Criada!")
+    print("Árvore Binária")
     print("Raiz:", arvore.raiz.valor)
     print("Altura:", arvore.altura())
     print("Nós Internos:", arvore.nos_internos())
     print("Folhas:", arvore.folhas())
 
-    numero_busca = 12
+    numero_busca = 4
     if arvore.busca(numero_busca):
         print(f"{numero_busca} está presente na árvore.")
     else:
